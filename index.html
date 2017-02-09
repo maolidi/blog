@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>毛李迪WEB前端自学之路</title>
+<meta charset="utf-8">
+<meta name="keywords" content="毛李迪,WEB前端">
+<meta name="description" content="毛李迪,WEB前端,自学">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="Favicon.ico">
+<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/index.css">
+</head>
+
+<body>
+<form action="" method="post" class="form-inline" role="form">
+  <!--导航栏开始-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fulid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">毛李迪</a> 
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse"> 
+        <!--注册登录-->
+                <ul class="nav navbar-nav navbar-right logoin">
+                    <li><a href="Artics/logoin.html" class="login">登录</a></li>
+                    <li><a href="Artics/register.html" class="register">注册</a></li>
+                </ul>
+                <ul class="nav navbar-nav logoin">
+                    <li class="active"><a href="index.html">首页</a></li>
+          <!--个人作品下拉菜单-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人作品<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a href="MY_WEB/myweb-01/index.html" target="_blank">墨攻</a> </li>
+                            <li> <a href="MY_WEB/myweb-02/index.html" target="_blank">拍拍网</a> </li>
+                            <li> <a href="MY_WEB/myweb-03/index.html" target="_blank">金刚</a> </li>
+                            <li> <a href="MY_WEB/myweb-04/index.html" target="_blank">金企鹅文化发展中心</a> </li>
+                            <li> <a href="MY_WEB/myweb-05/index.html" target="_blank">漳州门户</a> </li>
+                            <li> <a href="Artics/注册登录弹出.html" target="_blank">注册登录弹出页</a> </li>
+                            <li> <a href="MY_WEB/Tmail/index.html" target="_blank">天猫(未完成)</a> </li>
+                        </ul>
+                    </li>
+          <!--IFE2016下拉菜单-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">IFE2016<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://ife.baidu.com/task/all" target="_blank">任务列表</a></li>
+                            <li class="divider"></li>
+                            <li><a href="Artics/IFE2016.html">百度前端技术学院</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="mailto:jsmld1154951755@qq.com">联系我</a></li>
+          <!--导航栏搜索-->
+                    <li>
+                        <div class="input-group" id="nav-input">
+                            <input type="text" id="nav-search" class="form-control" placeholder="输入点什么开始搜索">
+                            <div class="input-group-btn">
+                                <button id="search" class="btn btn-default">搜索</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <!--导航栏结束-->
+</form>
+<div class="container">
+    <div class="row col-md-12">
+        <div class="top"></div>
+    <!--左侧栏-->
+        <div class="col-md-2 col-sm-2 hidden-xs aside_l"> <img  style="margin:0 auto" src="img/Web.png" class="img-responsive">
+            <p class="co"><a href="mailto:jsmld1154951755@qq.com">@毛李迪</a></p>
+            <p class="co" id="time"></p>
+        </div>
+    <!--主体栏-->
+        <div class="col-md-8 col-sm-10 col-xs-12 main">
+        	<div class="artic"><a href="Artics/IFE2016.html">百度前端学院<span>2016/12/23</span></a></div>
+          	<div class="artic"><a href="Artics/descript.html">建站介绍<span>2016/12/21</span></a></div>
+        </div>
+    
+    <!--右侧栏-->
+        <form action="Artics/logoin.php" method="post" id="myform" class="form-horizontal">
+            <div class="col-md-2 hidden-sm hidden-xs aside_r">
+                <div class="input-group text-left">
+                    <label> 用户名
+                        <input type="text" class="form-control" name="username" id="username" maxlength="9" placeholder="不超过9位">
+                    </label>
+                    <label> 密码
+                        <input type="password" class="form-control" name="password" id="password" minlength="6" placeholder="包含字母数字">
+                    </label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="1" id="save" name="save" checked>记住我
+                        </label>
+                    </div>
+                    <input type="button" class="btn btn-block btn-primary login" id="log-btn" name="log-reg-btn" value="登录">
+			         <a href="Artics/register.html" class="btn btn-block btn-default">注册</a>
+                </div>
+            </div>
+        </form>
+        <footer class="footer col-md-12 col-xs-12">
+            <div id="div_1"> <span id="span_1">ps:本站使用HTML5+CSS3+jquery+bootstrap，建议使用chrome浏览器浏览。</span> </div>
+            <div class="totop pull-right"></div>
+        </footer>
+    </div>
+</div>
+<script src="JS/jquery.min.js"></script> 
+<script src="JS/bootstrap.min.js"></script> 
+<script src="JS/index.js"></script>
+<script src="JS/logoin.js"></script>
+</body>
+</html>
