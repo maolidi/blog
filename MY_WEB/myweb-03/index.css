@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width:750px;
+	font-size: 12px;
+	font-family: "宋体",Arial;
+	margin:0 auto;
+}
+.top{
+	height:20px;
+}
+.top_l{
+	font-size: 18px;
+	color:#c09;
+	line-height: 20px;
+	float:left;
+	font-style: italic;
+}
+.top_r{
+	color:#933;
+	line-height: 20px;
+	float:right;
+	margin-right: 60px;
+}
+.nav{
+	clear:both;
+	background: url(images/tbg--01.gif) repeat-X;
+	height:46px;
+	line-height: 46px;
+	text-indent: 1.5em;
+	color:#933;
+	font-size: 24px;
+}
+.vide{
+	width:320px;
+	height:240px;
+	float:left;
+}
+.fon{
+	width:427px;
+	height:240px;
+	float:left;
+	background: #f1f1f1;
+	margin-left: 3px;
+}
+.fon ul{
+	list-style: none;
+}
+.fon_1{
+	text-indent: 3em;
+}
+.mid_nav{
+	clear:both;
+	height: 24px;
+	color:#fff;
+	font-size: 16px;
+	background: url(images/tit--01.gif) no-repeat;
+	text-indent: 3em;
+	font-style:italic;
+	line-height: 24px;
+	margin:3px 0;
+}
+h5{
+	font-weight: normal;
+}
+.des{
+	text-indent: 2em;
+	line-height: 16px;
+}
+hr{
+	margin-top: 10px;
+	margin-bottom:24px;
+	color:#aca899;
+}
+.footer{
+	margin:5px 0;`
+}
