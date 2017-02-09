@@ -1,0 +1,46 @@
+body{
+	margin:0;
+	padding:20px;
+}
+img{
+	height:80px;
+	width:80px;
+	border:1px solid #999;
+}
+.img{
+	margin-bottom: 20px;
+}
+.main{
+	background:#eee;
+	height:100%; 
+	padding:20px;
+	margin:0 auto;
+	border:1px solid #999;
+	min-height: 450px;
+}
+.left{
+	width:158px;
+	position:absolute;
+	top:20px;
+	left:20px;
+	background: white;
+	margin:20px;
+	padding:20px;
+	border:1px solid #999;
+}
+.mid{
+	background: white;
+	margin:0 140px 0 220px;
+	border:1px solid #999;
+	padding: 20px;
+}
+.right{
+	width:78px;
+	position:absolute;
+	top:20px;
+	right:20px;
+	background: white;
+	margin:20px;
+	border:1px solid #999;
+	padding: 20px;
+}

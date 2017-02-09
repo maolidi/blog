@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>响应式布局</title>
+	<meta charset="utf-8">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.div{
+			margin:10px -5px;
+			border:1px solid #999;
+			height:50px;
+			line-height: 50px;
+			background: #eee;
+		}
+	</style>
+</head>
+<body onload="th()">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="div sm6"></div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="div sm6"></div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="div sm12"></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3 col-sm-3">
+				<div class="div sm">三栏</div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="div sm">六栏</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<div class="div sm">三栏</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-1 col-sm-2">
+				<div class="div sm2"></div>
+			</div>
+			<div class="col-md-1 col-sm-2">
+				<div class="div sm2"></div>
+			</div>
+			<div class="col-md-2 col-sm-8">
+				<div class="div sm8"></div>
+			</div>
+			<div class="col-md-2 col-sm-3">
+				<div class="div sm3"></div>
+			</div>
+			<div class="col-md-6 col-sm-3">
+				<div class="div md6"></div>
+			</div>
+		</div>
+	</div>
+	<p id="te"></p>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	function th(){
+    		var x= $(window).width();
+    		if(x<768){
+    			$(".md6,.sm2,.sm3,.sm6,.sm8,.sm12,.sm").html("十二栏");
+    			$("#te").html("屏幕宽度小于768px");
+    		}
+    		if(x>=768){
+    			$(".sm6").html("六栏");
+    			$(".sm12").html("十二栏");
+    			$(".sm8").html("八栏");
+    			$(".sm3").html("三栏");
+    			$(".sm2").html("二栏");
+    			$(".md6").html("三栏");
+    			$("#te").html("屏幕宽度大于768px");
+    		}
+    		if(x>=992){
+    			$(".sm6").html("四栏");
+    			$(".sm12").html("四栏");
+    			$(".sm8").html("二栏");
+    			$(".sm3").html("二栏");
+    			$(".sm2").html("一栏");
+    			$(".md6").html("六栏");
+    			$("#te").html("屏幕宽度大于992px");
+    		}
+    		if(x>1200){
+    			$("#te").html("屏幕宽度大于1200px");
+    		}
+    		setTimeout(th,10);
+    	}
+    	$(function(){
+    		th();
+    	})
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<title>IFE JavaScript Task 19</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.show{
+			background: red;
+			width:20px;
+			margin-right:5px;
+			float:left;
+			cursor:pointer;
+		}
+		#show{
+			height: 100px;
+			margin-top: 20px;
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+		}
+		#right_in{
+			margin-right: 20px;
+		}
+		.num{
+			height: 20px;
+			width:20px;
+			position: relative;
+			top:-20px;
+			line-height: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="input_group">
+		<input type="text" id="txt" autofocus="autofocus" maxlength="3" onkeyup="enter()">
+		<button id="left_in" onclick="left_in()">左侧入</button>
+		<button id="right_in" onclick="right_in()">右侧入</button>
+		<button id="left_out" onclick="left_out()">左侧出</button>
+		<button id="right-out" onclick="right_out()">右侧出</button>
+		<button id="sort" onclick="arr_sort()">排序</button>
+	</div>		
+	<div id="show"></div>
+	<script type="text/javascript" src="task.js"></script>
+</body>
+</html>

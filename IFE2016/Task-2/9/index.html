@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title>IFE JavaScript Task 20</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.color{
+			color:green;
+		}
+		.defal{
+			color:white;
+		}
+		.show{
+			background: red;
+			color:white;
+			height: 50px;
+			line-height: 50px;
+			padding:0 5px;
+			font-size:20px;
+			font-weight: bold;
+			text-align:center;
+			margin:5px;
+			float:left;
+			cursor:pointer;
+		}
+		.input_group_1{
+			width:300px;
+			float: left;
+			text-align: center;
+		}
+		#text_in{
+			width: 250px;
+			height: 50px;
+		}
+		#btn_in{
+			width:260px;
+			height: 30px;
+			outline: none;
+			cursor:pointer;
+			border-radius: 20px;
+		}
+		.input_group_2{
+			width:300px;
+			float: left;
+			
+		}
+		#show{
+			clear: both;
+			padding-top: 10px;
+		}
+		#btn_search{
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="input_group_1">
+		<textarea id="text_in" placeholder="请输入" onkeyup="enter()"></textarea>
+		<button id="btn_in" onclick="btn_in()">插入</button>
+	</div>
+	<div class="input_group_2">
+		<input type="text" id="text_search" placeholder="输入查询" onkeyup="searchout()">
+		<button id="btn_search" onclick="btn_search()">查询</button>
+	</div>		
+	<div id="show"></div>
+	<script type="text/javascript" src="task.js"></script>
+</body>
+</html>

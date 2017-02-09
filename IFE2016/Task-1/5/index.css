@@ -1,0 +1,134 @@
+body{
+	font-size: 12px;
+	font-family:"Microsoft YaHei", arial;
+	margin:0;
+	padding:0;
+	background: #dedede;
+}
+div,aside{
+	background: white;
+	border-right:1px solid;
+	border-bottom:1px solid;
+	margin:20px 15px;
+	padding:20px;
+}
+header{
+	background: #333333;
+	margin:0;
+	height:60px;
+}
+header img{
+	margin-left: 40px;
+}
+header ul{
+	margin:0;
+	position:absolute;
+	right:15px;
+	top:0px;
+}
+header li{
+	display:inline;
+	margin-right: 15px;
+}
+header li a{
+	color:white;
+	line-height: 60px;
+	text-decoration: none;
+	font-size:smaller;
+}
+.li_4{
+	color:#999997;
+}
+.main{
+	margin-left: 5px;
+	margin-right: 365px;
+	background:#dedede;
+	border:none;
+	padding:0;
+	overflow: hidden;
+}
+.main_1{
+	margin-top: 10px;
+}
+.h2,.h3{
+	color:#717777;
+}
+.h3{
+	font-size: smaller;
+}
+.main_2 ul{
+	list-style: none;
+}
+.pic img{
+	height:120px;
+}
+.pic p{
+	border:1px solid black;
+	width:170px;
+	text-align: center;
+}
+.main_3{
+	margin-bottom: 10px;
+}
+.main_3 ol{
+	font-weight: bold;
+	font-size: larger;
+}
+caption,th{
+	text-align: left;
+}
+.main_3 table{
+	width:100%;
+	height:160px;
+	border-collapse: collapse;
+	border:1px solid #cccccc;
+}
+.main_3 th{
+	background:#333333;
+	color:white;
+}
+.foot{
+	background: #cccccc;
+}
+aside{
+	margin-right: 20px;
+	float: right;
+	width:300px;
+}
+aside h2{
+	border-left: 3px solid #dedede;
+	padding-left: 10px;
+	height:40px;
+	line-height: 40px;
+}
+#sub{
+	width:100%;
+	height: 40px;
+	border-radius: 15px;
+	background: #3355d0;
+	color:white;
+	font-size: larger;
+	font-weight:bold;
+}
+aside form table{
+	margin:0 auto;
+}
+textarea{
+	height:40px;
+	width:160px;
+}
+.t_left{
+	text-align: right;
+}
+footer{
+	background: black;
+	text-align:center;
+	line-height: 40px;
+	height: 60px;
+	color:white;
+
+}
+.tupian{
+
+	height:100%;
+}

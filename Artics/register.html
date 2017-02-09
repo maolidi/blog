@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>毛李迪WEB前端自学之路</title>
+<meta charset="utf-8">
+<meta name="keywords" content="毛李迪,WEB前端">
+<meta name="description" content="毛李迪,WEB前端,自学">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="../Favicon.ico">
+<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../CSS/index.css">
+	<style type="text/css">
+		.Btn_gruop{
+			margin-top: 20px;
+		}
+		.Btn_gruop input{
+			margin-bottom: 10px;
+		}
+		.Form_title{
+			margin:20px 0 40px 0;
+		}
+		.form-group{
+			margin-bottom: 20px;
+		}
+		.main{
+			min-height: 400px;
+		}
+	</style>
+</head>
+
+<body>
+  <!--导航栏开始-->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fulid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#navbar-collapse"> <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="../index.html" class="navbar-brand">毛李迪</a> </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse"> 
+        <!--注册登录-->
+        <ul class="nav navbar-nav navbar-right logoin">
+          <li id="li_log"><a href="logoin.html" class="login">登录</a></li>
+          <li id="li_reg" class="active"><a href="register.html" class="register">注册</a></li>
+        </ul>
+        <ul class="nav navbar-nav logoin">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="mailto:jsmld1154951755@qq.com">联系我</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--导航栏结束-->
+<div class="container">
+<div class="col-md-2"></div>
+<div class="row col-md-8">
+<div class="top"></div>
+<!--主体栏-->
+<form action="register.php" target="_self" method="post" id="myform" class="form-horizontal">
+<div class="col-md-12 col-sm-12 col-xs-12 main">
+<!--
+	<h1 class="text-center Form_title">登录</h1>
+	<div class="form-group">
+		<label class="col-md-2 control-label" for="username">用户名</label>
+		<div class="col-md-10"><input type="text" class="form-control" name="username" id="username" maxlength="9" placeholder="不超过9位"></div>
+	</div>
+	<div class="form-group">
+		<label for="password" class="col-md-2 control-label">密码</label>
+		<div class="col-md-10"><input type="password" class="form-control" name="password" id="password" minlength="6" placeholder="包含字母数字"></div>
+	</div>
+	<div class="checkbox text-center">
+		<label>
+		  <input type="checkbox" name="save" value="1">请记住我
+		</label>
+	</div>
+	<div class="Btn_gruop">
+		<input type="button" id="log-btn" name="log-reg-btn" class="btn btn-primary btn-block" name="log-btn" value="我要登录">
+		<a href="logoin.html" class="btn btn-default btn-block">我要注册</a>
+	</div>
+-->
+	<h1 class="text-center Form_title">注册</h1>
+	<div class="form-group">
+		<label class="col-md-2 control-label" for="username">用户名</label>
+		<div class="col-md-10"><input type="text" class="form-control" name="username" id="username" maxlength="9" placeholder="不超过9位"></div>
+	</div>
+	<div class="form-group">
+		<label for="password" class="col-md-2 control-label">密码</label>
+		<div class="col-md-10"> <input type="password" class="form-control" name="password" id="password" minlength="6" placeholder="包含字母数字"></div>
+	</div>
+	<div class="form-group">
+		<label for="rpassword" class="col-md-2 control-label">重复密码</label>
+		<div class="col-md-10"> <input type="password" class="form-control" name="rpassword" id="rpassword" minlength="6" placeholder="再次输入密码"></div>
+	</div>
+	<div class="form-group">
+		<label for="email" class="col-md-2 control-label">电子邮件</label>
+		<div class="col-md-10"><input type="email" class="form-control" id="email" name="email" placeholder="输入常用邮箱"></div>
+	</div>
+	<div class="Btn_gruop">
+		<input type="button" id="reg-btn" name="log-reg-btn" class="btn btn-primary btn-block" value="我要注册">
+		<a href="logoin.html" class="btn btn-default btn-block">直接登录</a>
+	</div>
+
+</div>
+ </form>
+  <footer class="footer col-md-12 col-xs-12">  
+  </footer>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
+<script src="../JS/jquery.min.js"></script> 
+<script src="../JS/bootstrap.min.js"></script> 
+<script src="../JS/register.js"></script>
+</body>
+</html>
